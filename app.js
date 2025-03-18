@@ -32,11 +32,11 @@ function sortearAmigo() {
   document.getElementById('listaAmigos').style.display = "none"; // Oculta la lista cuando ya se sortea
 
   let resultadoLista = document.getElementById('resultado');
-  resultadoLista.innerHTML = ""; // Limpiar resultados anteriores
+  resultadoLista.innerHTML = "";
 
   // Seleccionar un nombre aleatorio
-  let indiceAleatorio = Math.floor(Math.random() * listaNombres.length); // Índice aleatorio
-  let nombreSorteado = listaNombres[indiceAleatorio]; // Nombre seleccionado
+  let indiceAleatorio = Math.floor(Math.random() * listaNombres.length); // Aleatorio
+  let nombreSorteado = listaNombres[indiceAleatorio];
 
   // Mostrar el nombre sorteado
   let li = document.createElement('li');
